@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_margin">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <TextView
+                style="@android:style/TextAppearance.DeviceDefault.Large"
+                android:fontFamily="@font/domine"
+                android:paddingBottom="16dp"
+                android:text="Product info" />
+
+            <TableRow android:layout_marginTop="8dp">
+
+                <TextView
+                    style="@android:style/TextAppearance.DeviceDefault.Small"
+                    android:fontFamily="@font/domine"
+                    android:text="Product name" />
+
+                <TextView
+                    android:id="@+id/product_name_textview"
+                    style="@android:style/TextAppearance.DeviceDefault.Small"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto"
+                    tools:text="Hot sauce" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="8dp">
+
+                <TextView
+                    style="@android:style/TextAppearance.DeviceDefault.Small"
+                    android:fontFamily="@font/domine"
+                    android:text="Product price" />
+
+                <TextView
+                    android:id="@+id/product_price_textview"
+                    style="@android:style/TextAppearance.DeviceDefault.Small"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto"
+                    tools:text="22$" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/domine"
+                    android:text="Product quantity" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/minus_button"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:text="-" />
+
+                    <TextView
+                        android:id="@+id/product_quantity_textview"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="center"
+                        tools:text="5" />
+
+                    <Button
+                        android:id="@+id/plus_button"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:text="+" />
+                </LinearLayout>
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                style="@android:style/TextAppearance.DeviceDefault.Large"
+                android:fontFamily="@font/domine"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+                android:text="Supplier info" />
+
+            <TableRow android:layout_marginTop="8dp">
+
+                <TextView
+                    android:fontFamily="@font/domine"
+                    android:text="Supplier name" />
+
+                <TextView
+                    android:id="@+id/supplier_name_textview"
+                    style="@android:style/TextAppearance.DeviceDefault.Small"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto"
+                    tools:text="Sriracha" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="8dp">
+
+                <TextView
+                    android:fontFamily="@font/domine"
+                    android:text="Supplier phone number" />
+
+                <TextView
+                    android:id="@+id/supplier_phone_textview"
+                    style="@android:style/TextAppearance.DeviceDefault.Small"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto"
+                    tools:text="+3264654812" />
+            </TableRow>
+
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/call_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+            android:text="@string/call_supplier" />
+
+    </LinearLayout>
+</ScrollView>

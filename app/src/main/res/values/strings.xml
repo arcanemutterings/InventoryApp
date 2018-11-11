@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Inventory App</string>
+    <string name="sell_button">Sell</string>
+    <string name="less_than_zero_toast">Quantity cannot be less than zero</string>
+    <string name="product_info">Product \nInfo</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="editor_activity_title_add">Add item</string>
+    <string name="editor_activity_title_edit">Edit item</string>
+    <string name="unsaved_changes_dialog_msg">Quit editing without saving your changes?</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep editing</string>
+    <string name="name">Name</string>
+    <string name="currency">US dollars/item</string>
+    <string name="price">Price</string>
+    <string name="quantity">Quantity</string>
+    <string name="supplier_info">Supplier \nInfo</string>
+    <string name="supplier_name">Supplier Name</string>
+    <string name="supplier_phone_number">Supplier Phone Number</string>
+    <string name="error_saving_item_msg">Error saving item</string>
+    <string name="successful_saving_item_msg">Item saved successfully</string>
+    <string name="successful_update_msg">Item updated successfully</string>
+    <string name="error_update_msg">Error updating item</string>
+    <string name="delete_error_msg">Error deleting item</string>
+    <string name="succesful_delete_msg">Item deleted</string>
+    <string name="delete_item_dialog">Do you want to delete this item?</string>
+    <string name="actoin_edit">Edit</string>
+    <string name="details">Details</string>
+    <string name="call_supplier">Call supplier</string>
+    <string name="empty_view_text">Start adding items by clicking the \"+\" button</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="all_fields_must_be_filled_msg">All fields must filled in</string>
+</resources>
